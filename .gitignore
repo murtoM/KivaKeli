@@ -1,0 +1,5 @@
+# compiled java classes
+*.class
+
+# api keys
+api_key.txt
