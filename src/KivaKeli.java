@@ -13,6 +13,17 @@ import org.json.simple.JSONArray;
 import org.json.simple.parser.ParseException;
 import org.json.simple.parser.JSONParser;
 
+/**
+ * Print current temperature and weather condition in Finnish with UNIX-like 
+ * command-line options.
+ *
+ * Takes POSIX-standard command-line flags to modify settings in runtime:
+ * -h                   help message
+ * -l <location name>   location, eg. "Turku"
+ * -u <symbol>          temperature unit symbol, eg. C
+ *
+ * @author  Markus Murto
+ */
 public class KivaKeli {
   // initialize user input reader
   private static final Scanner inputReader = new Scanner(System.in);
@@ -35,6 +46,14 @@ public class KivaKeli {
   // temperature unit symbol
   private static char tempUnit = 'K';
 
+  /**
+   * Fetches OWM API key, parses command-line options and then prints weather
+   * information for the user.
+   *
+   * Takes POSIX standard command-line flags to modify settings in runtime.
+   *
+   * @param   args  command-line arguments, POSIX standard flags
+   */
   public static void main(String[] args) {
     try {
       String apiKey = keyFileManager();
