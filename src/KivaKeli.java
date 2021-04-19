@@ -67,7 +67,13 @@ public class KivaKeli {
       if (args.length == 0) {
         printWeather(apiKey);
       } else {
-        argParser(args);
+        try {
+          argParser(args);
+        }
+        catch(ArrayIndexOutOfBoundsException e) {
+          System.out.println("Virheellinen argumentti!");
+          System.exit(1);
+        }
         printWeather(apiKey);
       }
     }
