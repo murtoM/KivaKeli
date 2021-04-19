@@ -375,7 +375,7 @@ public class KivaKeli {
       System.out.println("Sää laitteen sijainnissa\n");
       url = buildGeoUrl(geoLoc[0], geoLoc[1], apiKey, tempUnit);
     } else {
-      System.out.println("Sää " + locName + ":");
+      System.out.println("Sää " + locName + "\n");
       url = buildCityUrl(locName, apiKey, tempUnit);
     }
     String rawJson = httpRequest(url);
