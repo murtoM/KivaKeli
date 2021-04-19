@@ -22,6 +22,9 @@ import org.json.simple.parser.JSONParser;
  * -l <location name>   location, eg. "Turku"
  * -u <symbol>          temperature unit symbol, eg. C
  *
+ *  OpenWeatherMap API key is stored locally in file api_key.txt in the 
+ *  current working directory.
+ *
  * @author  Markus Murto
  */
 public class KivaKeli {
@@ -51,6 +54,10 @@ public class KivaKeli {
    * information for the user.
    *
    * Takes POSIX standard command-line flags to modify settings in runtime.
+   *
+   * The OpenWeatherMap API key is stored locally in file api_key.txt in the
+   * current working directory. API key is interactively asked, if the file is
+   * not in the working directory.
    *
    * @param   args  command-line arguments, POSIX standard flags
    */
