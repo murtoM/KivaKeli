@@ -3,3 +3,6 @@
 
 # api keys
 api_key.txt
+
+# vim swap files
+*.swp
