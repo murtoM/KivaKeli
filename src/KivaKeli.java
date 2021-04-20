@@ -87,6 +87,11 @@ public class KivaKeli {
     }
   }
 
+  /**
+   * Simple way to parse POSIX-standard command-line arguments.
+   *
+   * @param   args  raw command-line arguments
+   */
   public static void argParser(String[] args) {
     for (int i = 0; i < args.length; i++) {
       switch(args[i]) {
