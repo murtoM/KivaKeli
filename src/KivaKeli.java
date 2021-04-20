@@ -90,6 +90,11 @@ public class KivaKeli {
   /**
    * Simple way to parse POSIX-standard command-line arguments.
    *
+   * Sets application settings according to the flags provided by the user:
+   * - location
+   * - temperature unit
+   * - prints help message
+   *
    * @param   args  raw command-line arguments
    */
   public static void argParser(String[] args) {
