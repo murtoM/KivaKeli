@@ -12,6 +12,8 @@ A messy hackjob of java project done as a exercise for Turku University of Appli
 
 The class is supposed to print weather information.
 
+Developed and tested on OpenJDK 11, but is likely to work on other versions.
+
 ## Compiling
 ```
 # running under src-directory
