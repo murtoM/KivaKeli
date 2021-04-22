@@ -27,7 +27,7 @@ Käyttö: KivaKeli [komentorivioptiot...]
 -u <symboli>	aseta haluttu lämpötilan symboli, esimerkisi C tai F
 ```
 
-## Output
+### Output
 ```
 $ java -cp lib/json-simple.jar: KivaKeli
 Sää laitteen sijainnissa
