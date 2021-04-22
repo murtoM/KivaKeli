@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2021 Markus Murto
+//
+// SPDX-License-Identifier: Apache-2.0
+
 import java.net.URL;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
