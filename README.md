@@ -21,6 +21,27 @@ Käyttö: KivaKeli [komentorivioptiot...]
 -u <symboli>	aseta haluttu lämpötilan symboli, esimerkisi C tai F
 ```
 
+## Output
+```
+$ java -cp lib/json-simple.jar: KivaKeli
+Sää laitteen sijainnissa
+
+Lämpötila: 281.7 K
+Keli: hajanaisia pilviä
+
+$ java -cp lib/json-simple.jar: KivaKeli -u c
+Sää laitteen sijainnissa
+
+Lämpötila: 8.55 °C
+Keli: hajanaisia pilviä
+
+$ java -cp lib/json-simple.jar: KivaKeli -u c -l "Turku"
+Sää Turku
+
+Lämpötila: 8.52 °C
+Keli: hajanaisia pilviä
+```
+
 ## License
 
 The main programme code is free software and licensed under the Apache 2.0 license. The documentation is licensed under CC0. This git repository is REUSE compliant and the specific license can be found in the header of each file (except the files under doc/).
