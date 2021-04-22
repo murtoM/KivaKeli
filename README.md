@@ -12,6 +12,12 @@ A messy hackjob of java project done as a exercise for Turku University of Appli
 
 The class is supposed to print weather information.
 
+## Compiling
+```
+# running under src-directory
+$ javac -cp lib/json-simple.jar KivaKeli.java
+```
+
 ## Running
 ```
 Käyttö: KivaKeli [komentorivioptiot...]
