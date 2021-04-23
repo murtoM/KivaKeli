@@ -400,10 +400,11 @@ public class KivaKeli {
     }
     String rawJson = httpRequest(url);
     String mainSubDoc = parseField(rawJson, "main");
+    int temp = (int) Math.round(Double.parseDouble(parseField(mainSubDoc, "temp")));
     if (tempUnit == 'K') {
-      System.out.println("Lämpötila: " + parseField(mainSubDoc, "temp") + " K");
+      System.out.println("Lämpötila: " + temp + " K");
     } else {
-      System.out.println("Lämpötila: " + parseField(mainSubDoc, "temp") + " °" + tempUnit);
+      System.out.println("Lämpötila: " + temp + " °" + tempUnit);
     }
     String weather = parseArray(rawJson, "weather", "description")[0];
     System.out.println("Keli: " + weather);
