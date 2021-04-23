@@ -34,19 +34,19 @@ Käyttö: KivaKeli [komentorivioptiot...]
 $ java -cp lib/json-simple.jar: KivaKeli
 Sää laitteen sijainnissa
 
-Lämpötila: 281.7 K
+Lämpötila: 282 K
 Keli: hajanaisia pilviä
 
 $ java -cp lib/json-simple.jar: KivaKeli -u c
 Sää laitteen sijainnissa
 
-Lämpötila: 8.55 °C
+Lämpötila: 9 °C
 Keli: hajanaisia pilviä
 
 $ java -cp lib/json-simple.jar: KivaKeli -u c -l "Turku"
 Sää Turku
 
-Lämpötila: 8.52 °C
+Lämpötila: 9 °C
 Keli: hajanaisia pilviä
 ```
 
